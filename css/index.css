@@ -309,7 +309,7 @@ html{
 
 .pricing .cards .plan_card{
     width: 330px;
-    height: 500px;
+    min-height: 500px;
     background: var(--secondary-color);
     box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
     padding: 30px;
