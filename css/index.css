@@ -29,6 +29,9 @@ button{
 body{
     background: #f1f1f1;
 }
+html{
+    scroll-behavior: smooth;
+}
 .home{
     width: 100%;
     height: 70vh;
@@ -128,8 +131,6 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .home .home_content .text_container{
     width: 70%;
@@ -138,6 +139,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     padding: 0 365px;
+    margin-bottom: 200px;
 }
 .home .home_content .text_container h1{
     font-size: 55px;
@@ -174,6 +176,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 .home .home_content .image_container img{
     width: 80%;
@@ -288,7 +291,7 @@ body{
 
 .pricing{
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
 }
 .pricing h1{
     margin-top: 30px;
@@ -314,6 +317,11 @@ body{
 }
 .pricing .cards .plan_card h2{
     text-align: center;
+    padding-bottom: 10px;
+}
+.pricing .cards .plan_card hr{
+    border: none;
+    border-top: 1px solid #ececec;
 }
 .pricing .cards .plan_card h1{
     font-weight: 700;
@@ -386,10 +394,92 @@ body{
     background: rgb(255, 89, 0);
 }
 
+.contact{
+    width: 100%;
+    min-height: 40vh;
+    background: var(--primary-color);
+}
+.contact .upper_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 30px;
+    color: var(--secondary-color);
+    flex-wrap: wrap;
+}
+.contact .upper_footer .one , .contact .upper_footer .two, .contact .upper_footer .three{
+    width: 400px;
+    margin-bottom: 30px;
+}
+.contact .upper_footer .one h4{
+    padding: 10px 0;
+    font-size: 20px;
+}
+.contact .upper_footer .one p{
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+.contact .upper_footer .one h5{
+    font-size: 20px;
+}
+.contact .upper_footer .one .icons i{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.contact .upper_footer .one .icons i:hover{
+    transform: rotate(360deg);
+    background: #000;
+    color: var(--secondary-color);
+}
+
+.contact .upper_footer .two h3{
+    font-weight: 600;
+    padding: 10px 0;
+}
+.contact .upper_footer .two ul li{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #d1d1d1;
+}
 
 
+.contact .upper_footer .three h3{
+    font-weight: normal;
+    padding: 10px 0;
+}
+.contact .upper_footer .three form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+.contact .upper_footer .three form input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+}
 
+.contact .upper_footer .three form button i{
+    padding: 11px 20px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    background: rgb(255, 162, 0);
+    cursor: pointer;
+}
 
+.contact .lower_footer{
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}
 
 
 @media only screen and (max-width:1860px){
@@ -483,6 +573,7 @@ body{
         padding: 30px;
         text-align: center;
         align-items: center;
+        margin-bottom: 0;
     }
     .home .home_content .text_container h1 {
         font-size: 20px;
@@ -504,6 +595,7 @@ body{
     .home .home_content .image_container {
         width: 100%;
         padding: 30px;
+        margin-bottom: 0;
     }
     .home .home_content .image_container img {
         width: 100%;
