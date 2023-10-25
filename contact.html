@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreatWork</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="home">
+        <header>
+            <div class="brand_name">
+                <a href="/">Greatwork</a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger_menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </header>
+    </section>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. If you have any questions, feedback, or suggestions, please feel free to
+            contact us using the form below or the following details:</p>
+        <ul>
+            <li>Phone: +91-123-456-7890</li>
+            <li>Email: info@yourwebsite.com</li>
+            <li>Address: 123, Your Street, Your City, Your State, Your Country</li>
+        </ul>
+        <form action="send.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <style>
+        .contact {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .contact h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .contact ul {
+            list-style-type: none;
+            font-size: 18px;
+            color: #666;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .contact ul li {
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            font-size: 18px;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            font-size: 18px;
+            color: #fff;
+            padding: 10px;
+            background-color: #0099ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</body>
+
+</html>
